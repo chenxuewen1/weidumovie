@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".view.buy.SeatSelectionActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_190"
+        android:scaleType="fitXY"
+        android:src="@mipmap/hdpi_2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_20"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/seat_selection_cinemaname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:text="GGV影城"
+            android:textColor="#fff"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/seat_selection_cinemaaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_5"
+            android:text="地址"
+            android:textColor="#fff"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/seat_selection_moviename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_5"
+            android:text="电影名"
+            android:textColor="#fff"
+            android:textSize="@dimen/sp_14" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_20"
+            android:alpha="0.8"
+            android:background="#aa84a0">
+
+            <TextView
+                android:id="@+id/seat_selection_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:text="10-30"
+                android:textColor="#fff"
+                android:textSize="@dimen/sp_13" />
+
+            <TextView
+                android:id="@+id/seat_selection_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_60"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:text="14:40-16:26"
+                android:textColor="#fff"
+                android:textSize="@dimen/sp_13" />
+
+            <TextView
+                android:id="@+id/seat_selection_ting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_40"
+                android:text="中影巨幕全景声厅"
+                android:textColor="#fff"
+                android:textSize="@dimen/sp_13" />
+        </RelativeLayout>
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_30"
+            android:src="@mipmap/rectangle_16" />
+
+        <com.bw.movie.view.custom.SeatTable
+            android:id="@+id/seat_seattable"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="@dimen/dp_312"
+            android:layout_height="@dimen/dp_73"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/shape_white_20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_34"
+                android:text="合计:"
+                android:textColor="#333333"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:text="￥"
+                android:textColor="#666666"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/seat_selection_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_6"
+                android:text="53.9"
+                android:textColor="#b11450"
+                android:textSize="@dimen/sp_36" />
+
+            <ImageView
+                android:id="@+id/seat_selection_queding"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:src="@mipmap/certain_hdpi" />
+
+            <ImageView
+                android:id="@+id/seat_selection_cancel"
+                android:layout_width="@dimen/dp_38"
+                android:layout_height="@dimen/dp_38"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:src="@mipmap/fang3_hdpi" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

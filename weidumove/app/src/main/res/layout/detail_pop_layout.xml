@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <!--详情pop-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_30"
+        android:background="@drawable/shappe_detail_10dp">
+
+        <TextView
+            android:id="@+id/pop_detail_leixing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_154"
+            android:layout_marginTop="@dimen/dp_15"
+            android:text="类型:"
+            android:textColor="#333333"
+            android:textSize="@dimen/sp_13" />
+
+        <TextView
+            android:id="@+id/pop_detail_daoyan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_154"
+            android:layout_marginTop="@dimen/dp_35"
+            android:text="导演:"
+            android:textColor="#333333"
+            android:textSize="@dimen/sp_13" />
+
+        <TextView
+            android:id="@+id/pop_detail_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_154"
+            android:layout_marginTop="@dimen/dp_55"
+            android:text="时长:"
+            android:textColor="#333333"
+            android:textSize="@dimen/sp_13" />
+
+        <TextView
+            android:id="@+id/pop_detail_chandi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_154"
+            android:layout_marginTop="@dimen/dp_75"
+            android:text="产地:"
+            android:textColor="#333333"
+            android:textSize="@dimen/sp_13" />
+
+        <ImageView
+            android:id="@+id/pop_detail_hide"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_20"
+            android:src="@mipmap/com_icon_down_default_hdpi" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/pop_detail_image"
+        android:layout_width="@dimen/dp_110"
+        android:layout_height="@dimen/dp_150"
+        android:layout_marginLeft="@dimen/dp_24"
+        />
+    <TextView
+        android:id="@+id/juqing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="剧情简介"
+        android:textSize="@dimen/sp_16"
+        android:textColor="#333333"
+        android:layout_below="@+id/pop_detail_image"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_24"
+        />
+    <View
+        android:id="@+id/detailsview"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_below="@+id/juqing"
+        android:layout_width="@dimen/dp_30"
+        android:background="#d11de9"
+        android:layout_height="@dimen/dp_3"/>
+
+    <TextView
+        android:id="@+id/pop_detail_jianjie"
+        android:layout_below="@+id/detailsview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_20"
+        android:textSize="@dimen/sp_12"
+        android:textColor="#333333"
+        android:text="毛主席在“我们很快就要在全国胜利了”时说：“夺取全国胜利，这只是万里长征走完了第一步……但革命以后的路程更长，工作更伟大，更艰苦。”敌人几百万武装就要被打破了，强大的敌手倒下了，反而使真正的共产党人“务必谦虚谨慎”，这是因为共产党人的青春梦想只是扬起了风帆，离着天下大同的目标还很远。"
+        android:padding="@dimen/dp_5"
+        android:lines="4"
+        android:ellipsize="end"
+        />
+
+    <TextView
+        android:id="@+id/people"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="演职人员"
+        android:textSize="@dimen/sp_16"
+        android:textColor="#333333"
+        android:layout_below="@+id/pop_detail_jianjie"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_24"
+        />
+    <View
+        android:id="@+id/detavies"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_below="@+id/people"
+        android:layout_width="@dimen/dp_30"
+        android:background="#d11de9"
+        android:layout_height="@dimen/dp_3"/>
+    <Button
+        android:id="@+id/bt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="演员名字"
+        android:textSize="@dimen/sp_13"
+        android:textColor="#ffffff"
+        android:background="#FFF77222"
+        android:layout_below="@+id/detavies"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginLeft="@dimen/dp_24"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="剧中角色"
+        android:textSize="@dimen/sp_13"
+        android:textColor="#ffffff"
+        android:background="#FFF77222"
+        android:layout_below="@+id/detavies"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_20"
+        />
+    <TextView
+        android:id="@+id/deteils_namess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_12"
+        android:textColor="#333333"
+        android:text="胡歌"
+        android:layout_below="@+id/bt_name"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_20"
+        />
+
+</RelativeLayout>

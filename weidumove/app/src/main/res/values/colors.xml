@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="white">#fff</color>
+    <color name="black">#060606</color>
+    <color name="pink">#FFC0CB</color>
+    <color name="yangred">#FF00FF</color>
+    <color name="huangblue">#6495ED</color>
+    <color name="tianblue">#87CEEB</color>
+    <color name="canggreen">#AFEEEE</color>
+</resources>
